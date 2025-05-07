@@ -4,11 +4,11 @@
 4. crea un entorno virtual (python -m venv .venv)
 5. instala las dependencias (pip install -r requirements.txt)
 
-Notas:
--Antes de ejecutar el proyecto debe tener elasticsearch corriendo
--La dependencia de ElasticSearch no se instala por defecto debido a que depende de la version de elasticsearch que usted este utilizando, por lo que debera comprobar que version tiene e instalar el cliente para python de esa version
 
 # Instrucciones para el Proyecto
+
+> ⚠️ **Advertencia:** Antes de ejecutar el proyecto, asegúrate de que **Elasticsearch** esté corriendo en tu sistema.
+
 
 1. Clona el repositorio:
     ```bash
@@ -25,7 +25,17 @@ Notas:
     python -m venv .venv
     ```
 
+> ⚠️ **Precaución:** La versión de Elasticsearch debe coincidir con la versión del cliente de Python que instalas.
+
 5. Instala las dependencias:
     ```bash
     pip install -r requirements.txt
+    ```
+
+6. Verifica la version de ElasticSearch correspondiente a instalar accediendo a localhost:9200 en el navegador
+
+
+7. Instala la version de ElasticSearch correspondiente
+    ```bash
+    pip install elasticsearch==x.x.x
     ```

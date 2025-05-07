@@ -1,3 +1,2 @@
 pandas
-elasticsearch==8.17.1
 matplotlib
